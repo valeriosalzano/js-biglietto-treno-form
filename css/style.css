@@ -30,7 +30,6 @@
     display: none;
 }
 .btn {
-    font-size: 1rem;
     padding: 0.5rem 1.5rem;
     border-style: unset;
     border-radius: 1rem;
@@ -53,34 +52,80 @@ header {
     max-width: 1170px ;
     background-color: var(--bg-white) ;
     border-radius: 3rem;
-    padding: 2rem;
     margin: 2rem auto;
 
 }
 
-section {
-    line-height: 1.5rem;
-    margin: 2rem auto 0;
-    border-top: 1px solid lightgray;
+.container {
+    padding: 2.5rem 1.5rem;
     font-size: 1.2rem;
 }
 
+section {
+    line-height: 1.5rem;
+    padding: 1rem;
+    border-top: 1px solid lightgray;
+}
+
+.inputs label {
+    text-align: center;
+}
+
+.inputs input,.inputs select {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-style: none;
+}
+
+.inputs input:focus, .inputs select:focus {
+    outline: 3px lightgray solid;
+    box-shadow: inset 0 0 0.5rem 0 lightgray;
+}
 
 form label {
     display: block;
 }
 
-.btns.container {
+.btns {
     display: flex;
     justify-content: space-between;
 }
 
-.results.container {
-    padding: 2rem 0;
-}
 .results h2 {
-    margin: 1.5rem 0;
+    margin-bottom: 1.5rem;
+}
+.results h3, .results h4 {
+    margin-bottom: 1rem;
 }
 .results section {
     font-size: 1rem;
 }
+
+.highlight {
+    font-size: 1.5rem;
+    color: red;
+}
+
+@media all and (min-width: 768px) {
+    main {
+        display: flex;
+    }
+
+    .inputs.container {
+        width: 40%;
+        padding-right: 3rem;
+    }
+    .inputs section {
+        margin: 1rem 0;
+    }
+
+    .results.container {
+        width: 60%;
+        border-left: 3px solid lightgray;
+        padding-left: 3rem;
+    }
+}
+

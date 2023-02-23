@@ -25,12 +25,12 @@
                 <form action="post">
                     <section>
                         <label for="userName">Enter your full name.</label>
-                        <input type="text" id="userName"/>
+                        <input type="text" id="userName" placeholder="Full Name here"/>
                     </section>
                     
                     <section>
                         <label for="userDistance">Enter the distance in kilometers from the arrival station. </label>
-                        <input type="text" id="userDistance"/>
+                        <input type="text" id="userDistance" placeholder="Kilometers here"/>
                     </section>
     
                     <section>
@@ -44,15 +44,15 @@
                     </section>
 
                 </form>
-                <section class="btns container">
+                <section class="btns">
                     <button class="btn" id="submit">Submit</button>
                     <button class="btn" id="reset">Reset</button>
                 </section>
             </div>
             <div class="results container hidden">
+                <h2>Passenger Details</h2>
                 <section>
-                    <h2>Passenger Details</h2>
-                    <h3 class="text-uh3percase">passenger full name</h3>
+                    <h3 class="text-uppercase">passenger full name</h3>
                     <p id="printName" class="text-capitalize"></p>
                 </section>
                 <section>
@@ -68,7 +68,7 @@
                     <p id="printCode"></p>
                 </section>
                 <section>
-                    <h4>Ticket Final Price</h4>
+                    <h4 class="highlight">Ticket Final Price</h4>
                     <p id="printPrice"></p>
                 </section>
             </div>
