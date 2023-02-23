@@ -4,7 +4,83 @@
     box-sizing: border-box;
 }
 
-/* google font open sans */
-/* html {
-    font-family: 'Open Sans', sans-serif;
-} */
+:root{
+    /* color palette */
+    --bg-dark-layer: rgba(0,0,0,0.75);
+    --bg-white: white;
+
+    --text-white: white;
+
+    /* fonts  */
+    font-family: sans-serif;
+}
+
+
+/* Utility */
+.text-capitalize {
+    text-transform: capitalize;
+}
+.text-center {
+    text-align: center;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.hidden {
+    display: none;
+}
+.btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-style: unset;
+    border-radius: 1rem;
+    margin: 0.5rem;  
+}
+
+/* Style */
+
+body {
+    background-color: var(--bg-dark-layer);
+    padding: 0.5rem;
+}
+
+header {
+    color: var(--text-white);
+    margin-top: 2rem;
+}
+
+.main-container {
+    max-width: 1170px ;
+    background-color: var(--bg-white) ;
+    border-radius: 3rem;
+    padding: 2rem;
+    margin: 2rem auto;
+
+}
+
+section {
+    line-height: 1.5rem;
+    margin: 2rem auto 0;
+    border-top: 1px solid lightgray;
+    font-size: 1.2rem;
+}
+
+
+form label {
+    display: block;
+}
+
+.btns.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.results.container {
+    padding: 2rem 0;
+}
+.results h2 {
+    margin: 1.5rem 0;
+}
+.results section {
+    font-size: 1rem;
+}

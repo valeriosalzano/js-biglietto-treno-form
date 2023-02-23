@@ -15,27 +15,65 @@
 </head>
     
 <body>
+    <header>
+        <h1 class="text-center ">Ticket Price Calculator</h1>
+    </header>
+    <div class="main-container">
+        <!-- main -->
+        <main>
+            <div class="inputs container">
+                <form action="post">
+                    <section>
+                        <label for="userName">Enter your full name.</label>
+                        <input type="text" id="userName"/>
+                    </section>
+                    
+                    <section>
+                        <label for="userDistance">Enter the distance in kilometers from the arrival station. </label>
+                        <input type="text" id="userDistance"/>
+                    </section>
+    
+                    <section>
+                        <label for="userAge">Select your age.</label>
+                        <select id="userAge">
+                            <option value="">--Choose an option--</option>
+                            <option value="adult">Adult</option>
+                            <option value="underage">Minor</option>
+                            <option value="senior">Senior</option>
+                        </select>
+                    </section>
 
-    <!-- main -->
-    <main>
-        <form action="post">
-            <label for="userName">Enter your full name.</label>
-            <input type="text" id="userName"/>
-
-            <label for="userDistance">Enter the distance in kilometers from the arrival station. </label>
-            <input type="text" id="userDistance"/>
-
-            <label for="userAge">Enter your age.</label>
-            <select id="userAge">
-                <option value="">--Choose an option--</option>
-                <option value="adult">Adult</option>
-                <option value="underage">Minor</option>
-                <option value="senior">Senior</option>
-            </select>
-        </form>
-        <button id="submit">Submit</button>
-        <button id="reset">Reset</button>
-    </main>
+                </form>
+                <section class="btns container">
+                    <button class="btn" id="submit">Submit</button>
+                    <button class="btn" id="reset">Reset</button>
+                </section>
+            </div>
+            <div class="results container hidden">
+                <section>
+                    <h2>Passenger Details</h2>
+                    <h3 class="text-uh3percase">passenger full name</h3>
+                    <p id="printName" class="text-capitalize"></p>
+                </section>
+                <section>
+                    <h4>Offer</h4>
+                    <p id="printDiscount"></p>
+                </section>
+                <section>
+                    <h4>Wagon</h4>
+                    <p id="printWagon"></p>
+                </section>
+                <section>
+                    <h4>Ticket Code</h4>
+                    <p id="printCode"></p>
+                </section>
+                <section>
+                    <h4>Ticket Final Price</h4>
+                    <p id="printPrice"></p>
+                </section>
+            </div>
+        </main>
+    </div>
 
     <script type="text/javascript" src="js/main.js"></script>
     <!-- script bootstrap -->
