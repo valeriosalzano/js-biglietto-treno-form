@@ -17,7 +17,7 @@ submit.addEventListener ('click',
         if ( age != "") {
             let distance = userDistance.value;
             // userDistance validity test
-            if (!(isNaN(distance))) {
+            if (!(isNaN(distance)) && distance > 0) {
 
                 let price = distance * farePerKm;
 
